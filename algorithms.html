@@ -3,222 +3,178 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Algorithms | Software Design & Engineering</title>
+  <title>Algorithms & Data Structures | Sylvia Davis</title>
 
   <style>
-    :root{
-      --bg: #0f0f10;
-      --text: #111;
-      --muted: #6b7280;
-      --card: #ffffff;
-      --border: #e5e7eb;
-      --link: #2563eb;
-      --headerText: #ffffff;
-      --headerMuted: rgba(255,255,255,.85);
-      --pill: #f3f4f6;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f7f7f7;
+      color: #111;
     }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      background:#f7f7f8;
-      color:var(--text);
-      line-height:1.55;
+    header {
+      background: #111;
+      color: #fff;
+      padding: 28px 20px;
+      text-align: center;
     }
-
-    /* Header */
-    header{
-      background: var(--bg);
-      color: var(--headerText);
-      padding: 38px 18px 18px;
-      text-align:center;
+    nav {
+      margin-top: 10px;
+      font-size: 14px;
     }
-    header h1{
-      margin:0;
-      font-size: 40px;
-      letter-spacing:.3px;
+    nav a {
+      color: #fff;
+      margin: 0 8px;
+      text-decoration: none;
     }
-    nav{
-      margin-top: 14px;
-      display:flex;
-      justify-content:center;
-      flex-wrap:wrap;
-      gap:14px;
-      font-size:14px;
+    nav a:hover {
+      text-decoration: underline;
     }
-    nav a{
-      color: var(--headerMuted);
-      text-decoration:none;
-      padding: 6px 10px;
-      border-radius: 8px;
-    }
-    nav a:hover{ background: rgba(255,255,255,.08); color:#fff; }
-    nav a.active{ color:#fff; background: rgba(255,255,255,.12); }
-
-    /* Layout */
-    main{
-      max-width: 980px;
-      margin: 22px auto 70px;
-      padding: 0 16px;
-    }
-    .card{
-      background: var(--card);
-      border: 1px solid var(--border);
+    main {
+      max-width: 950px;
+      margin: 25px auto;
+      padding: 25px;
+      background: white;
       border-radius: 14px;
-      padding: 22px;
-      box-shadow: 0 1px 0 rgba(0,0,0,.02);
-      margin-bottom: 18px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
     }
-    .card h2{
-      margin: 0 0 10px;
-      font-size: 26px;
+    h1, h2, h3 {
+      margin-top: 0;
     }
-    .card p{ margin: 10px 0; }
-    .muted{ color: var(--muted); }
-    .pillRow{
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      margin-top: 12px;
+    .card {
+      background: #fafafa;
+      border: 1px solid #e5e5e5;
+      padding: 16px;
+      border-radius: 12px;
+      margin: 14px 0;
     }
-    .pill{
-      background: var(--pill);
-      border: 1px solid var(--border);
-      padding: 7px 10px;
-      border-radius: 999px;
+    ul { padding-left: 20px; }
+    a { color: #0063ce; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    code {
+      background: #eee;
+      padding: 2px 6px;
+      border-radius: 6px;
+    }
+    .small-note {
       font-size: 13px;
-      color:#111;
+      color: #444;
+      margin-top: 8px;
     }
-    ul{ margin: 10px 0 0 18px; }
-    li{ margin: 6px 0; }
-    a{ color: var(--link); }
-    .small-note{
+    footer {
+      text-align: center;
+      margin-top: 25px;
       font-size: 13px;
-      color: var(--muted);
-      margin-top: 12px;
+      color: #666;
     }
-    footer{
-      text-align:center;
-      color: var(--muted);
-      font-size: 13px;
-      padding: 30px 16px 50px;
+    .badge {
+      display: inline-block;
+      background: #eee;
+      padding: 6px 10px;
+      border-radius: 20px;
+      margin: 4px;
+      font-size: 14px;
     }
   </style>
 </head>
 
 <body>
-  <header>
-    <h1>Software Design & Engineering</h1>
+
+<header>
+  <h1>Algorithms & Data Structures</h1>
+  <div class="nav">
     <nav>
-      <a href="index.html">Home</a>
+      <a href="index.html">Home</a> |
+      <a href="software-design.html">Software Design</a> |
       <a href="code-review.html">Code Review</a>
-      <a class="active" href="algorithms.html">Algorithms</a>
-      <a href="databases.html">Databases</a>
-      <a href="self-assessment.html">Self-Assessment</a>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <main>
-    <section class="card">
-      <h2>Artifact Overview: Algorithms & Data Structures</h2>
-      <p>
-        This page highlights my Algorithms & Data Structures artifact, focusing on how I applied core
-        algorithmic thinking to solve problems efficiently and produce a maintainable, professional solution.
-        The work demonstrates how I approach problem solving using data structures, clean logic, and
-        structured design decisions that support readability and long-term improvement.
-      </p>
-      <p><strong>Category:</strong> Algorithms and Data Structures</p>
+<main>
 
-      <div class="pillRow">
-        <span class="pill">Data Structures</span>
-        <span class="pill">Algorithm Efficiency</span>
-        <span class="pill">Clean, Readable Code</span>
-        <span class="pill">Maintainability</span>
-        <span class="pill">Testing / Validation</span>
-      </div>
-    </section>
+  <div class="card">
+    <h2>Artifact Overview</h2>
+    <p>
+      This artifact represents my <strong>Algorithms & Data Structures enhancement</strong> for the CS 499 Capstone.
+      I selected my CS 320 testing/validation project (Appointment Service + JUnit testing) because it demonstrates
+      structured data handling, repeatable validation logic, and algorithmic improvement through data-driven execution.
+    </p>
 
-    <section class="card">
-      <h2>Why This Artifact Is Included</h2>
-      <p>
-        I included this artifact in my ePortfolio because it demonstrates my ability to design a solution
-        using appropriate data structures and algorithmic logic. It reflects how I break down requirements,
-        choose an approach that supports performance and clarity, and implement a solution that is easier to
-        maintain and extend over time.
-      </p>
-    </section>
+    <div>
+      <span class="badge">Category: Algorithms & Data Structures</span>
+      <span class="badge">Course: CS 320 (Enhanced for CS 499)</span>
+      <span class="badge">Milestone: 3</span>
+    </div>
+  </div>
 
-    <section class="card">
-      <h2>Skills Demonstrated</h2>
-      <ul>
-        <li><strong>Algorithm design:</strong> structured problem solving with clear control flow and logic.</li>
-        <li><strong>Data structure selection:</strong> using the right structure to support efficiency and readability.</li>
-        <li><strong>Maintainability:</strong> improving organization so future updates are simpler and safer.</li>
-        <li><strong>Reliability:</strong> input validation and handling edge cases to prevent runtime issues.</li>
-        <li><strong>Professional documentation:</strong> explaining decisions clearly for reviewers and stakeholders.</li>
-      </ul>
-    </section>
+  <div class="card">
+    <h2>Enhancement Summary (Milestone Three)</h2>
+    <p>
+      For this enhancement, I improved maintainability and scalability by reducing repetitive test logic and applying
+      a more algorithmic, structured execution approach. Instead of writing nearly identical test cases, I organized
+      input cases into collections and executed validations using consistent iteration patterns.
+    </p>
+    <p>
+      This supports stronger software engineering practices because new test cases can be added simply by adding a new
+      entry into the dataset rather than rewriting new test methods.
+    </p>
+  </div>
 
-    <section class="card">
-      <h2>Enhancement Summary</h2>
-      <ul>
-        <li><strong>Before:</strong> Functionality existed, but needed stronger structure, validation, and clearer presentation.</li>
-        <li><strong>After:</strong> Improved organization and strengthened reliability with clearer logic and safer handling of inputs.</li>
-        <li><strong>Result:</strong> A more professional, maintainable artifact that better represents algorithm and data structure skills.</li>
-      </ul>
-    </section>
+  <div class="card">
+    <h2>Artifact Files & Documentation</h2>
+    <ul>
+      <li>
+        <strong>Algorithms Artifact Folder:</strong>
+        <a href="https://github.com/sylvianett/Portfolio_CapstoneCS499/tree/main/artifacts/algorithms" target="_blank" rel="noopener">
+          View Appointment Service Files (GitHub Folder)
+        </a>
+      </li>
 
-    <section class="card">
-      <h2>Artifact Files & Documentation</h2>
+      <!-- OPTIONAL ZIP (only keep this section if you upload a ZIP later)
+      <li>
+        <strong>Enhanced ZIP:</strong>
+        <a href="https://github.com/sylvianett/Portfolio_CapstoneCS499/raw/main/artifacts/algorithms/REPLACE_WITH_YOUR_ZIP_FILENAME.zip" target="_blank" rel="noopener">
+          Download ZIP
+        </a>
+      </li>
+      -->
 
-      <ul>
-        <li>
-          <strong>Algorithms Artifact Folder:</strong>
-          <a href="https://github.com/sylvianett/Porfolio_CapstoneCS499/tree/main/artifacts/algorithms" target="_blank" rel="noopener">
-            View Algorithms Files (GitHub Folder)
-          </a>
-        </li>
+      <li>
+        <strong>Milestone Three Enhancement Narrative:</strong>
+        <a href="https://raw.githubusercontent.com/sylvianett/Portfolio_CapstoneCS499/main/artifacts/algorithms/CS499_Milestone3_Algorithms_Narrative_Sylvia_Davis.docx" target="_blank" rel="noopener">
+          Download Narrative (DOCX)
+        </a>
+      </li>
+    </ul>
 
-        <li>
-          <strong>Algorithms Enhanced ZIP:</strong>
-          <a href="https://raw.githubusercontent.com/sylvianett/Porfolio_CapstoneCS499/main/artifacts/algorithms/REPLACE_WITH_YOUR_ALGORITHMS_ZIP_FILENAME.zip"
-             target="_blank" rel="noopener">
-            Download Algorithms (ZIP)
-          </a>
-        </li>
+    <p class="small-note">
+      If a download link returns a 404, the filename in GitHub may not match (spacing/capitalization).
+      Open the file inside GitHub and copy the exact filename.
+    </p>
+  </div>
 
-        <li>
-          <strong>Milestone Enhancement Narrative:</strong>
-          <a href="https://raw.githubusercontent.com/sylvianett/Porfolio_CapstoneCS499/main/artifacts/algorithms/REPLACE_WITH_YOUR_ALGORITHMS_NARRATIVE_FILENAME.docx"
-             target="_blank" rel="noopener">
-            Download Narrative (DOCX)
-          </a>
-        </li>
-      </ul>
-
-      <p class="small-note">
-        If a download link 404s, the filename in GitHub is different (spacing/capitalization). Open the file in GitHub,
-        copy the exact filename, and replace the placeholder above.
-      </p>
-    </section>
-
-    <section class="card">
-      <h2>Reflection</h2>
-      <p>
-        Working on this artifact strengthened my understanding of how algorithm and data structure choices impact
-        performance, readability, and long-term maintainability. A key takeaway was the importance of writing code
-        that is not only correct, but also organized and easy to extend. Improving structure and validation helped
-        reinforce professional engineering practices and made the overall solution more reliable.
-      </p>
-    </section>
-  </main>
+  <div class="card">
+    <h2>Reflection</h2>
+    <p>
+      Enhancing this artifact reinforced that testing is more than writing assertions—it involves designing a repeatable,
+      scalable process that can grow as requirements expand. One challenge was ensuring the parameterized approach still
+      clearly mapped back to original requirements without becoming too abstract. I addressed this by keeping datasets
+      organized by requirement area and maintaining clear naming and strong validation logic.
+    </p>
+  </div>
 
   <footer>
-    © <span id="year"></span> Sylvia Davis • ePortfolio
+    &copy; <span id="year"></span> Sylvia Davis • ePortfolio
   </footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+</main>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
