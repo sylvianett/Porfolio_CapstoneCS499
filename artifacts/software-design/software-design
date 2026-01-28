@@ -15,6 +15,7 @@
     .nav a { color: #fff; margin: 0 8px; }
     ul { padding-left: 20px; }
     .badge { display: inline-block; background: #eee; padding: 6px 10px; border-radius: 20px; margin: 4px; font-size: 14px; }
+    .small-note { font-size: 14px; color: #444; }
   </style>
 </head>
 <body>
@@ -35,10 +36,10 @@
   <div class="card">
     <h2>Artifact Overview: SYLTrack (Mobile Application)</h2>
     <p>
-      SYLTrack is a mobile application designed to help users track weight entries and progress toward goals. For CS 499, I selected
-      this artifact to demonstrate professional software engineering through maintainable architecture, consistent navigation, and
-      scalable data handling. This enhancement work focused on strengthening the foundation of the application so that new features and
-      visual improvements can be added on top of a stable structure.
+      SYLTrack is a mobile application designed to help users track weight entries and measure progress toward goals over time.
+      The application supports weight entry management and dashboard-style summaries to help users stay consistent.
+      I selected this artifact for CS 499 because it demonstrates complete software engineering practices in a real-world style application,
+      including multi-screen navigation, maintainable architecture, and scalable data handling.
     </p>
     <p><strong>Category:</strong> Software Design and Engineering</p>
   </div>
@@ -46,10 +47,10 @@
   <div class="card">
     <h2>Why This Artifact Is Included</h2>
     <p>
-      I included SYLTrack in my ePortfolio because it demonstrates real-world software development skills: building a multi-screen
-      application, improving navigation and user flow, and enhancing data handling to support future growth. This artifact also shows my
-      ability to improve an existing codebase based on code review findings and apply professional practices like separation of concerns,
-      maintainability, and scalability.
+      I included SYLTrack in my ePortfolio because it reflects professional software development beyond basic functionality.
+      The enhancement process demonstrates that I can evaluate an existing codebase, identify design issues, and implement improvements
+      that increase maintainability, scalability, and usability. The artifact also aligns closely with real-world expectations of software
+      products where iterative improvements and long-term structure matter.
     </p>
   </div>
 
@@ -62,24 +63,31 @@
       <span class="badge">Scalability</span>
       <span class="badge">Data Handling</span>
     </div>
+
     <ul>
-      <li><strong>Architecture improvements:</strong> strengthened the overall structure and organization to support scalability.</li>
-      <li><strong>Consistent navigation:</strong> introduced a centralized dashboard (SYLBoard) and a persistent bottom navigation bar.</li>
-      <li><strong>User-based data:</strong> improved handling so weight entries are tied to authenticated users.</li>
-      <li><strong>Goal tracking + insights:</strong> stored goals persistently and surfaced summary progress (recent weight, goal progress).</li>
+      <li><strong>Architecture + scalability:</strong> enhancements prioritized a stable and extensible foundation.</li>
+      <li><strong>Dashboard creation:</strong> implemented a centralized dashboard (SYLBoard) for improved usability.</li>
+      <li><strong>Consistent navigation:</strong> added a persistent bottom navigation bar to improve user flow.</li>
+      <li><strong>User-focused structure:</strong> improved data handling so weight entries are tied to authenticated users.</li>
+      <li><strong>Goal + progress support:</strong> persistently stored goals and surfaced summary data to provide insight.</li>
     </ul>
+
+    <p class="small-note">
+      These improvements support clean software design principles such as separation of concerns and maintainable structure.
+    </p>
   </div>
 
   <div class="card">
     <h2>Enhancement Summary (Milestone Two)</h2>
     <p>
-      For Milestone Two, I intentionally focused on strengthening architecture, functionality, and scalability rather than visual branding.
-      The primary enhancements included adding the SYLBoard dashboard, improving navigation consistency, and enhancing data handling and
-      summaries to provide more meaningful insight to the user.
+      For Milestone Two, I intentionally prioritized software engineering quality over visual branding. The enhancement work focused on
+      improving architecture, navigation consistency, and data handling for scalability. These updates improved usability and created a
+      more stable base that can support future enhancements.
     </p>
+
     <p>
-      I deferred advanced theming and branding elements (logos/icons) until later to ensure the application foundation remains stable,
-      secure, and maintainable before polishing the presentation layer.
+      According to my enhancement plan, visual branding elements such as icons, logos, and advanced theming were intentionally deferred
+      to a later milestone to ensure the codebase remains stable and well-structured before presentation-layer changes.
     </p>
   </div>
 
@@ -92,12 +100,14 @@
           View SYLTrack Files (GitHub Folder)
         </a>
       </li>
+
       <li>
         <strong>SYLTrack Enhanced ZIP:</strong>
         <a href="https://github.com/sylvianett/Porfolio_CapstoneCS499/blob/main/artifacts/software-design/SYLTrack_SylviaDavis%20Enhanced%20Milestone%20Two.zip" target="_blank">
           Download SYLTrack (ZIP)
         </a>
       </li>
+
       <li>
         <strong>Milestone Two Enhancement Narrative:</strong>
         <a href="https://github.com/sylvianett/Porfolio_CapstoneCS499/blob/main/artifacts/software-design/CS499_Milestone_Two_Enhancement_Narrative_Sylvia_Davis.docx" target="_blank">
@@ -105,15 +115,21 @@
         </a>
       </li>
     </ul>
+
+    <p class="small-note">
+      If any download link does not work, it usually means the filename in GitHub is slightly different (spacing/capitalization).
+      If that happens, tell me and I’ll fix the link instantly.
+    </p>
   </div>
 
   <div class="card">
     <h2>Reflection</h2>
     <p>
-      Enhancing SYLTrack reinforced the importance of building a strong foundation before focusing on visual polish. I learned that
-      navigation consistency and clean architecture have a major impact on the usability and maintainability of an application.
-      One challenge was balancing improvements to user flow with keeping the code organized and scalable. Overall, this enhancement
-      strengthened my ability to revise an existing software solution with professional standards in mind.
+      Enhancing SYLTrack strengthened my understanding of how design decisions impact maintainability, scalability, and user experience.
+      I learned that building a stable foundation first makes future improvements easier and reduces technical debt. A key challenge was
+      balancing new features (like improved dashboards and navigation flow) while maintaining clean structure and readable code.
+      Overall, this artifact reflects my growth in software engineering practices and my ability to improve an existing solution using
+      professional design principles.
     </p>
   </div>
 
